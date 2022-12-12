@@ -1,0 +1,20 @@
+# Just docs specific configuration
+logo: 'https://user-images.githubusercontent.com/11653294/64466233-7cd17480-d119-11e9-8965-e036c1e23c9a.png'
+search_enabled: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: 'Back to top'
+aux_links:
+    'SAP Alert Notification service for SAP BTP node client on GitHub':
+        - '//github.com/SAP/alert-notification-node-client'
+
+title: SAP Alert Notification service for SAP BTP Node client
+baseurl: '/alert-notification-node-client' # the subpath of your site, e.g. /blog
+url: '' # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+remote_theme: pmarsceill/just-the-docs
+plugins:
+    - github-pages
+    - jekyll-feed
+    - jekyll-include-cache

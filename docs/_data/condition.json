@@ -1,0 +1,44 @@
+{
+    "propertyFields": [
+        {
+            "name": "id?",
+            "type": "string",
+            "description": "An identification string which will be generated on its creation"
+        },
+        {
+            "name": "name",
+            "type": "string",
+            "description": "Unique name, used for identification"
+        },
+        {
+            "name": "description",
+            "type": "string",
+            "description": "Brief description of the condition, e.g. explaining what it will be used for"
+        },
+        {
+            "name": "propertyKey",
+            "type": "string",
+            "description": "Property key of the event, e.g. eventType"
+        },
+        {
+            "name": "predicate",
+            "type": "[Predicate](/alert-notification-node-client/configuration-api-objects/condition/#predicate) (string)",
+            "description": "Predefined matching criteria"
+        },
+        {
+            "name": "propertyValue",
+            "type": "string",
+            "description": "Value to be expected when matching the propertyKey with the given predicate"
+        },
+        {
+            "name": "labels?",
+            "type": "string[]",
+            "description": "Representing meaningful identifiers, which enable custom displaying & filtering capabilities"
+        },
+        {
+            "name": "mandatory?",
+            "type": "string[]",
+            "description": "Explicitly set which conditions must be mandatory. If not set conditions will be treated as follows: <br> - Conditions with different property keys will be evaluated with the AND operator <br> - Conditions with the same property key will be evaluated with OR operator"
+        }
+    ]
+}
